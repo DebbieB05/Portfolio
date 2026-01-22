@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ann Debbie Bedrijo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+    }
+    h1 {
+      color: #1a73e8;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    a {
+      color: #e91e63;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: square;
+      margin-bottom: 20px;
+    }
+    ul li {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+    img {
+      display: block;
+      margin-bottom: 20px;
+      max-width: 150px;
+      border-radius: 10px;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background-color: #0c52b7;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Ann Debbie Bedrijo</h1>
+
+<img src="https://via.placeholder.com/150" alt="Profile Placeholder">
+
+<a href="https://github.com/" target="_blank">Visit My GitHub</a>
+
+<p id="myPara">I am learning web development to become a front-end developer and freelance professionally.</p>
+
+<button onclick="changeText()">Click Me</button>
+<button onclick="changeSkills()">Update Skills</button>
+<button onclick="changeImage()">Show Real Profile Photo</button>
+<button onclick="showMessage()">Say Hello</button>
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+<script>
+  // Welcome popup
+  alert("Welcome to Ann Debbie Bedrijo's portfolio!");
+
+  // Paragraph change
+  function changeText() {
+    document.getElementById("myPara").innerText = "I am practicing JavaScript now!";
+  }
+
+  // Update skills
+  function changeSkills() {
+    const skills = ["HTML", "CSS", "JavaScript", "Git", "React"];
+    const ul = document.querySelector("ul");
+    ul.innerHTML = "";
+    skills.forEach(skill => {
+      const li = document.createElement("li");
+      li.innerText = skill;
+      ul.appendChild(li);
+    });
+  }
+
+  // Change image
+  function changeImage() {
+    const img = document.querySelector("img");
+    img.src = "https://via.placeholder.com/150/0000FF/FFFFFF?text=New+Image";
+    img.alt = "Updated Profile Image";
+  }
+
+  // Personalized message
+  function showMessage() {
+    alert("Hello! Welcome to Ann Debbie Bedrijo's portfolio!");
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ann Debbie Bedrijo Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1a73e8;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin-bottom: 15px;
+      color: #333333;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-bottom: 15px;
+    }
+
+    ul li {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    a {
+      color: #e91e63;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      display: block;
+      margin-bottom: 15px;
+      max-width: 150px;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      display: inline-bl
+
