@@ -37,14 +37,15 @@
       text-decoration: underline
     }
 
-    img {
+   img {
   display: block;
   margin: 20px auto;
-  max-width: 150px; /* keeps image small */
-  height: auto;      /* maintains aspect ratio */
-  border-radius: 50%; /* makes it circular */
+  width: 150px;       /* force width */
+  height: 150px;      /* force height */
+  object-fit: cover;  /* keeps it proportionally filled */
+  border-radius: 50%; /* circular */
 }
-
+ 
 
     button {
       padding: 10px 15px
@@ -105,6 +106,7 @@
 
 </body>
 </html>
+
 
 
 
