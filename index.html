@@ -2,77 +2,66 @@
 <html>
 <head>
   <title>Ann Debbie Bedrijo</title>
-  <meta charset="UTF-8">
-
   <style>
     body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  color: #333;
-  padding: 40px;
-  max-width: 700px;
-  margin: auto;       /* centers the whole page */
-  text-align: center; /* centers all text */
-}
-
-
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+      text-align: left;
+    }
 
     h1 {
-      color: #1a73e8
-      margin-bottom: 20px
+      color: #1a73e8;
     }
 
     p {
-      font-size: 18px
-      line-height: 1.6
-      margin-bottom: 20px
+      font-size: 18px;
+      line-height: 1.6;
     }
 
     a {
-      color: #e91e63
-      text-decoration: none
-      display: inline-block
-      margin-bottom: 20px
+      color: #e91e63;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 20px;
     }
 
-    a:hover {
-      text-decoration: underline
+    .photo-frame {
+      width: 180px;
+      height: 180px;
+      background-color: #003b3a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
     }
 
-   img {
-  display: block;
-  margin: 20px auto;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;              /* keeps it circular */
-  background-color: #003366;       /* midnight teal behind the photo */
-  padding: 5px;                     /* creates a “frame” around the image */
-  border: 2px solid #003366;       /* optional: solid frame line */
-}
-
- 
+    .photo-frame img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
     button {
-      padding: 10px 15px
-      background-color: #1a73e8
-      color: white
-      border: none
-      border-radius: 5px
-      cursor: pointer
-      font-size: 16px
-      margin: 5px
+      padding: 10px 15px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 10px;
+      margin-bottom: 10px;
     }
 
     ul {
-      list-style: none
-      padding: 0
-    }
-
-    li {
-      display: inline-block
-      margin: 5px 10px
-      font-weight: bold
+      list-style-type: square;
+      padding-left: 20px;
     }
   </style>
 </head>
@@ -81,10 +70,11 @@
 
   <h1>Ann Debbie Bedrijo</h1>
 
-  <img src="https://github.com/DebbieB05/Portfolio/blob/main/fbpp.png?raw=true" alt="Ann Debbie Bedrijo">
+  <div class="photo-frame">
+    <img src="https://github.com/DebbieB05/Portfolio/blob/main/fbpp.png?raw=true" alt="Profile Photo">
+  </div>
 
-
-  <p id="myPara">
+  <p>
     I am learning web development to become a front-end developer and freelance professionally.
   </p>
 
@@ -94,7 +84,7 @@
     <button>Click Me</button>
     <button>Update Skills</button>
     <button>Show Real Profile Photo</button>
-    <button onclick="showMessage()">Say Hello</button>
+    <button>Say Hello</button>
   </div>
 
   <h2>Skills</h2>
@@ -104,14 +94,11 @@
     <li>JavaScript</li>
   </ul>
 
-  <script>
-    function showMessage() {
-      alert("Hello! Welcome to Ann Debbie Bedrijo's portfolio!")
-    }
-  </script>
-
 </body>
 </html>
+
+
+
 
 
 
