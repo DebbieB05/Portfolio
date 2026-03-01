@@ -122,13 +122,19 @@
     <li>JavaScript</li>
   </ul>
 <script>
-  document.getElementById("sayHelloBtn").onclick = function () {
-    window.location.href = "mailto:yourname@email.com"
-  }
-</script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
 
-</body> 
-<html>  
+    document.getElementById("sayHelloBtn").addEventListener("click", function () {
+      window.location.href = "mailto:annbedrijo@gmail.com";
+    });
+
+    document.getElementById("introBtn").addEventListener("click", function () {
+      alert("I build clean, responsive websites using HTML, CSS, and JavaScript.");
+    });
+
+  });
+</script>
 
 
 
